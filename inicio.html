@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <script type="text/javascript" src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <title>ChallengeALURA</title>
+  </head>
+  <body>
+    <div class="contenedor">
+      <div class="logo">
+        <img class="logoimg" src="img/Vector.png" />
+        <h1 class="title">Encriptador de mensajes</h1>
+      </div>
+      <div class="izquierda">
+        <input
+          class="textinput"
+          id="inputTexto"
+          type="text"
+          placeholder="Ingrese el texto aquí"
+        />
+      </div>
+      <div class="derecha">
+        <img src="img/Muñeco.png" id="imgDer" />
+        <h1 id="texto">Ningun mensaje fue encontrado</h1>
+        <textarea name="name" id="texto2" cols="80" rows="8">
+          Ingrese el texto que desees encriptar o desencriptar</textarea
+        >
+        <button type="button" id="copiar" name="button" onclick="copy()">
+          ¡Copiar!
+        </button>
+      </div>
+      <div class="left-button">
+        <p>Solo minusculas y sin acentos</p>
+        <button type="button" id="btnEncriptar" onclick="encriptar()">
+          Encriptar
+        </button>
+        <button type="button" id="btnDesencriptar" onclick="desencriptar()">
+          Desencriptar
+        </button>
+      </div>
+    </div>
+    <footer>
+      <center><p class="gabriel">&copy By: Favarolo Gabriel - 2022</p></center>
+    </footer>
+  </body>
+</html>
